@@ -10,7 +10,7 @@ export default function Experiences() {
     const [experiences,setexperiences]=useState([])
 
     useEffect(() => {
-       axios.get("http://localhost:3001/experiences")
+       axios.get("https://devkan.vercel.app/experiences")
        .then(resulats=>setexperiences(resulats.data[0]))
        .catch(error=>console.log(error))
        const timerprojets= setInterval(() => { 

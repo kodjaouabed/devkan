@@ -17,14 +17,14 @@ export default function   Portofolio({reference}) {
 
   
   useEffect(()=>{
-   axios.get("http://localhost:3001/projects")
+   axios.get("https://devkan.vercel.app/projects")
    .then(result=>setproject(result.data))
    .catch(err=>console.log(err))
   },[])
     function projectdetailsopen(e) {
         document.querySelector(".detailsProject").style.marginRight="0px"
         projectdetailsid=e.target.getAttribute("numberproject")
-        axios.post("http://localhost:3001/projectdetails",{projectdetailsid})
+        axios.post("https://devkan.vercel.app/projectdetails",{projectdetailsid})
         .then(result=>setprojectdetails(result.data[0])) 
          .catch(err=>console.log(err))
       }
