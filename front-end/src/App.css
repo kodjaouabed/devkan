@@ -15,7 +15,9 @@ body{
   width: 90%;
   margin-left: 100px;
 }
-
+.section{
+  margin-left: 18px;
+}
  .info div p{
    font-size: 20px;
    padding-top: 100px;
@@ -199,5 +201,8 @@ body{
    height: 60px;
   }
   
-  
+  .section{
+    margin-left: -20px;
+   }
+
 }

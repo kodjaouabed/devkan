@@ -20,6 +20,9 @@
     width: 350px;
     height: 300px;
 }
+.section{
+margin-left: 18px;
+}
 
 .service-contenu2{
     width: 40%;
@@ -64,3 +67,12 @@
         width: 90%;
     }
 }
+
+
+@media screen and (max-width:600px) {
+   .section{
+    margin-left: -20px;
+   }
+}
+
+  

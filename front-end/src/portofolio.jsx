@@ -208,7 +208,7 @@ function Project(props) {
           <div className='btn-container'>
               <div style={{width:200}}>
 
-              <div style={{marginLeft:18}}>
+              <div className='section'>
               <h2 style={{textAlign:"left",marginLeft:38}}>Projets</h2>
                 <div>
                   <hr  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
