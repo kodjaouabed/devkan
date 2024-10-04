@@ -170,6 +170,16 @@ nav .btn-menu{
         width: 40%;
     }
 }
+
+@media screen and (max-width:500px) {
+    nav .logo img{
+        margin-left: -20px;
+    }
+    nav .btn-menu{
+        margin-right: 30px;
+       
+}
+}
 @media screen and (max-width:567px) {
     .menu{
         width: 50%;
