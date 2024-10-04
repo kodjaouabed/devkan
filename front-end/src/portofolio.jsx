@@ -113,7 +113,7 @@ function Project(props) {
             {projects.map((project,indexprojects)=>{
             return(
              
-              <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{width:600,height:300, background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,marginTop:50,cursor:"pointer"}} >
+              <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
@@ -144,7 +144,7 @@ function Project(props) {
           {projects.map((project,indexprojects)=>{
             if (project.typeproject==="DEVELOPPEMENT WEB") {
                return(
-                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{width:600,height:300, background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,marginTop:50,cursor:"pointer"}} >
+                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
@@ -166,7 +166,7 @@ function Project(props) {
             {projects.map((project,indexprojects)=>{
             if (project.typeproject==="DEVELOPPEMENT MOBILE") {
                return(
-                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{width:600,height:300, background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,marginTop:50,cursor:"pointer"}} >
+                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />

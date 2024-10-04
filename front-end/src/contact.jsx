@@ -100,7 +100,7 @@ useEffect(() => {
     
     return(
       <div className='contacts' ref={reference}>
-        <div style={{marginLeft:18}}>
+        <div className='section'>
 <h2 style={{textAlign:"left",marginLeft:38}}>Contatez-moi</h2>
   <div>
     <hr  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
