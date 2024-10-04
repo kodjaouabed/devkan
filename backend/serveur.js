@@ -13,10 +13,10 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
 
 const db=mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'',
-    database:'Devkan',
+    host:'bsakvrkpkojt8vtgkl6f-mysql.services.clever-cloud.com',
+    user:'ulpp7vttd0hmqo5i',
+    password:'29uRrpFB97YmoNBNlqS9',
+    database:'bsakvrkpkojt8vtgkl6f',
 })
 
 
