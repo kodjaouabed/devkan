@@ -1,0 +1,182 @@
+section{
+    width: 100%;
+    height: 100px;
+}
+
+.navbars{
+   background-color: white;
+   z-index: 1;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 20%;
+    height: 100px;
+    transition-delay: 0.8s;
+    
+}
+
+
+nav .reseau a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: rgb(175, 34, 34);
+    transition-delay: 0.8s;
+}
+nav .contact a{
+    text-decoration: none;
+    margin-left: 80px;
+    color: black;
+    transition-delay: 0.8s;
+}
+nav .logo img{
+    width: 200px;
+    height: 200px;
+    margin-top: -50px;
+}
+
+nav .nav{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav .nav a{
+    display: inline-block;
+    padding-top: 40px;
+    height: 40%;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 60px;
+    color: black;
+    transition-delay: 0.8s;
+}
+nav .btn-menu{
+    font-size: 15px;
+    margin-right: 100px;
+}
+.lienhome:hover{
+ border-bottom: 5px solid rgb(175, 34, 34);
+}
+.lienservices:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.liencompetences:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.lienportofolio:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.lientarifs:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.lienapropos:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.liencontact:hover{
+    border-bottom: 5px solid rgb(175, 34, 34);
+}
+.menu{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(175, 34, 34);
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 1s;
+    z-index: 1;
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.menu .navigation{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.menu .navigation h5{
+    color: white;
+    font-size: 16px;
+}
+.menu .navigation hr{
+    display: block;
+    width: 40%;
+    color: white;
+    margin-top: -20px;
+    margin-left: 0px;
+}
+.menu .navigation h6{
+    color: white;
+    font-size: 14px;
+}
+.menu .navigation p{
+    color: white;
+    font-size: 14px;
+}
+.menu .navigation button{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid white;
+    color: rgb(175, 34, 34);
+    cursor: pointer;
+}
+.menu .navigation a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:1000px) {
+    nav .nav{
+        display: none;
+    }
+    .menu{
+        width: 30%;
+    }
+    nav .btn-menu{
+        margin-right: 100px;
+        font-size: 30px;
+}
+}
+@media screen and (max-width:800px) {
+    nav .logo img{
+        width: 160px;
+        height: 160px;
+        margin-top: -30px;
+        margin-left: 15px;
+    }
+    nav .btn-menu{
+        margin-right: 50px;
+       
+}
+  
+}
+@media screen and (max-width:745px) {
+    .menu{
+        width: 40%;
+    }
+}
+@media screen and (max-width:567px) {
+    .menu{
+        width: 50%;
+    }
+}
+@media screen and (max-width:453px) {
+    .menu{
+        width: 90%;
+    }
+}

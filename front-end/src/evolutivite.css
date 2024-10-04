@@ -1,0 +1,12 @@
+.conteneurevolutivite{
+    width: 100%;
+    height: 10px;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+.evolutivite{
+    width: 100%;
+    height: 5px;
+    transition: 1s;
+}

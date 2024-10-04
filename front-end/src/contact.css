@@ -1,0 +1,172 @@
+.contacts{
+    min-height: 100vh;
+}
+
+
+.contacts .conteneur1{
+   width: 100%;
+   min-height: 750px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-bottom: 100px;
+   
+ }
+.contacts .conteneur2{
+   min-height: 300px;
+}
+.contacts .conteneur2 .reseau{
+   display: flex;
+   justify-content: space-around;
+   gap: 200px;
+   padding-left: 100px;
+}
+.contacts .conteneur2 .reseau div{
+   width: 40%;
+}
+.contacts .conteneur2 .reseau div h3{
+   color: white;
+   text-align: left;
+}
+.contacts .conteneur2 .reseau div p{
+   color: white;
+   text-align: justify;
+}
+.contacts .conteneur2 .reseau div p a{
+   text-decoration: none;
+   color: white;
+}
+.contacts .conteneur2 .reseau div p span{
+   font-weight: 600;
+}
+.contacts .conteneur1 .contact{
+   width: 40%;
+}
+.contacts .conteneur1 .contact div{
+   margin-top: 30px;
+}
+.contacts .conteneur1 .contact div p{
+   text-align: left;
+}
+.contacts .conteneur1 .contact hr{
+  width: 90%;
+  border: 1px solid;
+  margin-left: 0px;
+}
+.contacts .conteneur1 .localisation{
+   width: 40%;
+   height: 600px;
+}
+.contacts .conteneur1 .formulaire_de_contact{
+    width: 50%;
+    margin-left: 10px;
+}
+.contacts .conteneur1 .formulaire_de_contact div{
+   display: flex;
+   text-align: center;
+   margin-top: 40px;
+}
+.contacts .conteneur1 .formulaire_de_contact div span{
+   width: 10%;
+}
+.contacts .conteneur1 .formulaire_de_contact input{
+    display: block;
+    width: 90%;
+    padding: 10px;
+}
+.contacts .conteneur1 .formulaire_de_contact p{
+   text-align: justify;
+}
+.contacts .conteneur1 .formulaire_de_contact input::placeholder{
+   opacity: 0.6;
+}
+.contacts .conteneur1 .formulaire_de_contact input,textarea::placeholder{
+   opacity: 0.6;
+}
+.contacts .conteneur1 .formulaire_de_contact textarea{
+   display: block;
+   width: 95%;
+   padding: 10px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+.contacts .conteneur1 .formulaire_de_contact button{
+   display: block;
+   margin-left: 0px;
+   width: 50%;
+   padding: 10px;
+   color: white;
+   margin-top: 20px;
+   cursor: pointer;
+}
+.contacts .footer{
+   min-height: 30px;
+   padding-top: 20px;
+}
+.contacts .footer p{
+   margin-top: 0px;
+   color: white;
+}
+
+@media screen and (max-width:1000px) {
+  
+   .contacts .conteneur1 .contact{
+      width: 80%;
+      height: 600px;
+   }
+   .contacts .conteneur1 .formulaire_de_contact{
+       width: 80%;
+       margin-left: 10px;
+   }
+
+   .contacts .conteneur2 .reseau{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding-left: 0px;
+      gap: 0px;
+      
+   }
+   .contacts .conteneur2 .reseau .c1{
+      width: 50%;
+   }
+   .contacts .conteneur2 .reseau .c2{
+      width: 30%;
+   }
+
+   .contacts .conteneur2 .reseau div h3{
+      font-size: 15px;
+   }
+   .contacts .conteneur2 .reseau div p{
+      font-size: 15px;
+   }
+}
+
+
+@media screen and (max-width:800px) {
+
+
+   .contacts .conteneur2 .reseau{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-left: 0px;
+      gap: 0px;
+      
+   }
+   .contacts .conteneur2 .reseau .c1{
+      width: 90%;
+   }
+   .contacts .conteneur2 .reseau .c2{
+      width: 90%;
+   }
+
+   .contacts .conteneur2 .reseau div h3{
+      font-size: 20px;
+   }
+   .contacts .conteneur2 .reseau div p{
+      font-size: 17px;
+   }
+}

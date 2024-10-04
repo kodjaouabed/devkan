@@ -1,0 +1,68 @@
+.experiences{
+    width: 95%;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.experiences div h2{
+   font-size: 50px;
+   font-weight: 900;
+   text-align: center;
+}
+.experiences div p{
+   margin-top: -10px; 
+}
+.visible {
+   opacity: 1;
+   transform: translateY(0);
+   transition: 1s cubic-bezier(0.5,0,0,1);
+ }
+ .invisible1 {
+   transition-delay: 1s;
+ }
+ .invisible2 {
+   transition-delay: 1.6s;
+ }
+ .invisible3 {
+   transition-delay: 2.2s;
+ }
+
+@media screen and (max-width:1000px) {
+
+.experiences div p{
+   margin-top: -30px;
+}
+}
+
+ @media screen and (max-width:800px) {
+.experiences div h2{
+   font-size: 35px;
+}
+.experiences{
+   margin-top: 50px; 
+}
+}
+
+@media screen and (max-width:500px) {
+  
+.experiences{
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.experiences div{
+  width: 100%;
+}
+.experiences div h2{
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.experiences div p{
+   margin-top: -20px; 
+   text-align: center;
+   letter-spacing: 3px;
+}
+}

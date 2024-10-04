@@ -1,0 +1,198 @@
+.competences{
+    min-height: 100vh;
+    padding-top: 100px;
+    margin: auto;
+}
+.competences h2{
+    color: gray;
+    margin-top: 50px;
+ }
+ .competences hr{
+     border: 2px solid;
+     width: 10%;
+     margin: auto;
+     margin-bottom: 100px;
+}
+.html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.html .tech{
+    width: 30%;
+    text-align: left;
+}
+.html .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.html .niveau div{
+    width: 98%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+.css{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.css .tech{
+    width: 30%;
+    text-align: left;
+}
+.css .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.css .niveau div{
+    width: 96%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+
+.js{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+}
+.js .tech{
+    width: 30%;
+    text-align: left;
+}
+.js .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.js .niveau div{
+    width: 92%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+.react{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.react .tech{
+    width: 30%;
+    text-align: left;
+}
+.react .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.react .niveau div{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+
+.php{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+}
+.php .tech{
+    width: 30%;
+    text-align: left;
+}
+.php .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.php .niveau div{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+
+.laravel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+}
+.laravel .tech{
+    width: 30%;
+    text-align: left;
+}
+.laravel .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.laravel .niveau div{
+    width: 91%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+.python{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+}
+.python .tech{
+    width: 30%;
+    text-align: left;
+}
+.python .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.python .niveau div{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+.java{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 50px;
+}
+.java .tech{
+    width: 30%;
+    text-align: left;
+}
+.java .niveau{
+    width: 40%;
+    text-align:left;
+    background-color: rgb(245, 235, 235);
+}
+.java .niveau div{
+    width: 95%;
+    height: 100%;
+    background-color: rgb(175, 34, 34);
+}
+
+@media screen and (max-width:1000px) {
+    .html,.css,.php,.js,.react,.python,.java,.laravel{
+        gap: 0px;
+    }
+}

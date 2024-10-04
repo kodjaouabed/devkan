@@ -1,0 +1,92 @@
+header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+[class*="invisible"]{
+    opacity: 0;
+    transform: translateY(30px);
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(0.5,0,0,1);
+}
+.invisible1 {
+    transition-delay: 1.1s;
+}
+.invisible2 {
+    transition-delay: 1.2s;
+}
+.invisible3 {
+    transition-delay: 1.3s;
+}
+.invisible4 {
+    transition-delay: 1.4s;
+}
+.invisible5 {
+    transition-delay: 1.6s;
+}
+.invisible6 {
+    transition-delay: 1.8s;
+}
+.invisible7 {
+    transition-delay: 2s;
+}
+
+header .reseau{
+    width: 50%;
+    text-align: left;
+}
+header .contact{
+    width: 50%
+}
+header .reseau a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: rgb(175, 34, 34);
+    transition-delay: 0.8s;
+}
+header .contact a{
+    text-decoration: none;
+    margin-left: 80px;
+    color: black;
+    transition-delay: 0.8s;
+}
+@media screen and (max-width:945px) {
+    header .reseau{
+        width: 50%;
+    }
+    header .contact{
+        width: 50%
+    }
+    header .reseau a{
+        margin-left: 30px;
+    }
+    header .contact a{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:829px) {
+    header .reseau a{
+        display: none;
+    }
+}
+@media screen and (max-width:667px) {
+    header .reseau{
+        display: none;
+        
+    }
+    header .contact{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

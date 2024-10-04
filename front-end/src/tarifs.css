@@ -1,0 +1,242 @@
+.tarifs{
+    min-height: 100vh;
+}
+.tarifs h2{
+    color: gray;
+    margin-top: 50px;
+ }
+ .tarifs .hr{
+     border: 2px solid;
+     width: 10%;
+     margin: auto;
+     color:rgb(175, 34, 34);
+     margin-bottom: 100px;
+}
+.tarifs .tarif{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tarifs .tarif .standard{
+    width: 20%;
+    background-color: rgb(175, 34, 34);
+    color: white;
+}
+.tarifs .tarif .standard hr{
+    border: 2px solid;
+    width: 20%;
+    margin: auto;
+    color:white;
+}
+.tarifs .tarif .standard h4{
+   opacity: 0.7;
+}
+.tarifs .tarif .standard h1{
+   font-weight: 900 ;
+}
+.tarifs .tarif .standard div{
+    background-color: rgb(190, 70, 70);
+}
+.tarifs .tarif .standard p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.tarifs .tarif .standard span{
+    margin-top: -10px;
+}
+.tarifs .tarif .standard button{
+   background-color: white;
+   border: 1px solid white;
+   padding: 10px;
+   color: rgb(190, 70, 70);
+   margin-bottom: 25px;
+}
+
+
+
+
+.tarifs .tarif .personnelle{
+    width: 20%;
+    background-color: rgb(175, 34, 34);
+    color: white;
+}
+.tarifs .tarif .personnelle hr{
+    border: 2px solid;
+    width: 20%;
+    margin: auto;
+    color:white;
+}
+.tarifs .tarif .personnelle h4{
+   opacity: 0.7;
+}
+.tarifs .tarif .personnelle h1{
+   font-weight: 900 ;
+}
+.tarifs .tarif .personnelle div{
+    background-color: rgb(190, 70, 70);
+}
+.tarifs .tarif .personnelle p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.tarifs .tarif .personnelle span{
+    margin-top: -10px;
+}
+.tarifs .tarif .personnelle button{
+   background-color: white;
+   border: 1px solid white;
+   padding: 10px;
+   color: rgb(190, 70, 70);
+   margin-bottom: 25px;
+}
+
+
+
+.tarifs .tarif .e-commerce{
+    width: 20%;
+    background-color: rgb(175, 34, 34);
+    color: white;
+}
+.tarifs .tarif .e-commerce hr{
+    border: 2px solid;
+    width: 20%;
+    margin: auto;
+    color:white;
+}
+.tarifs .tarif .e-commerce h4{
+   opacity: 0.7;
+}
+.tarifs .tarif .e-commerce h1{
+   font-weight: 900 ;
+}
+.tarifs .tarif .e-commerce div{
+    background-color: rgb(190, 70, 70);
+}
+.tarifs .tarif .e-commerce p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.tarifs .tarif .e-commerce span{
+    margin-top: -10px;
+}
+.tarifs .tarif .e-commerce button{
+   background-color: white;
+   border: 1px solid white;
+   padding: 10px;
+   color: rgb(190, 70, 70);
+   margin-bottom: 25px;
+}
+
+
+
+.tarifs .tarif .maintenance{
+    width: 20%;
+    background-color: rgb(175, 34, 34);
+    color: white;
+}
+.tarifs .tarif .maintenance hr{
+    border: 2px solid;
+    width: 20%;
+    margin: auto;
+    color:white;
+}
+.tarifs .tarif .maintenance h4{
+   opacity: 0.7;
+}
+.tarifs .tarif .maintenance h1{
+   font-weight: 900 ;
+}
+.tarifs .tarif .maintenance div{
+    background-color: rgb(190, 70, 70);
+}
+.tarifs .tarif .maintenance p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.tarifs .tarif .maintenance span{
+    margin-top: -10px;
+}
+.tarifs .tarif .maintenance button{
+   background-color: white;
+   border: 1px solid white;
+   padding: 10px;
+   color: rgb(190, 70, 70);
+   margin-bottom: 25px;
+}
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .tarifs .tarif{
+       gap: 50px;
+    }
+    .tarifs .tarif .standard{
+        width: 40%;
+        margin-top: 40px;
+    }
+    .tarifs .tarif .personnelle{
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    .tarifs .tarif .e-commerce{
+        width: 40%;
+        margin-top: 40px;
+    }
+
+    .tarifs .tarif .maintenance{
+        width: 40%;
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .tarifs .tarif .standard{
+        width: 60%;
+    }
+    .tarifs .tarif .personnelle{
+        width: 60%;
+    }
+    .tarifs .tarif .e-commerce{
+        width: 60%;
+    }
+    .tarifs .tarif .maintenance{
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px) {
+    .tarifs .tarif .standard{
+        width: 70%;
+    }
+    .tarifs .tarif .personnelle{
+        width: 70%;
+    }
+    .tarifs .tarif .e-commerce{
+        width: 70%;
+    }
+    .tarifs .tarif .maintenance{
+        width: 70%;
+    }
+}
+@media screen and (max-width:500px) {
+    .tarifs .tarif .standard{
+        width: 80%;
+    }
+    .tarifs .tarif .personnelle{
+        width: 80%;
+    }
+    .tarifs .tarif .e-commerce{
+        width: 80%;
+    }
+    .tarifs .tarif .maintenance{
+        width: 80%;
+    }
+}

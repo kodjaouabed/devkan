@@ -1,0 +1,33 @@
+.conteneur{
+    min-height: 110vh;
+    
+}
+ 
+
+.conteneur_tech{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 200px;
+    margin-top: 100px;
+}
+
+
+
+
+
+@keyframes circle {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  .conteneur_tech{
+    gap: 100px;
+    
+}
+
+}

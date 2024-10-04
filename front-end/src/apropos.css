@@ -1,0 +1,81 @@
+.apropos{
+    width: 100%;
+    min-height: 100vh;
+}
+.apropos h2{
+    margin-top: 50px;
+ }
+
+.apropos .propos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.apropos .propos p{
+    font-size: 18px;
+}
+
+.proposbackground{
+    width: 38%;
+    height: 450px;
+    background:url(pngtree-frustrated-girl-point-with-finger-at-something-young-person-show-vector-png-image_49030176-removebg-preview.png) center/contain no-repeat;
+}
+.propostexte{
+    width: 50%;
+    height: 450px;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .proposbackground{
+        width: 38%;
+        height: 450px;
+        background:url(pngtree-frustrated-girl-point-with-finger-at-something-young-person-show-vector-png-image_49030176-removebg-preview.png) center/cover no-repeat;
+    }
+    .apropos .propos .passion{
+        width: 80%;
+    }
+    .apropos .propos .experience{
+        width: 80%;
+    }
+    .apropos .nbrprojet{
+        flex-wrap: wrap;
+    }
+    .apropos .nbrprojet div{
+        width: 50%;
+    }
+    .bt{
+        font-size: 10px;
+    }
+
+
+    .propostexte{
+        width: 90%;
+    }
+    .proposbackground{
+       width: 100%;
+    }
+    .apropos{
+        min-height: 120vh;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:650px) {
+    .apropos{
+        min-height: 180vh;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .apropos{
+        min-height: 220vh;
+    }
+}
