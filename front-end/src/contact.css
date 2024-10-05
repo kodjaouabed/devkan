@@ -146,6 +146,20 @@
 
 @media screen and (max-width:800px) {
 
+   .contacts .conteneur1 .contact{
+      width: 90%;
+      height: 600px;
+   }
+   .contacts .conteneur1 .formulaire_de_contact{
+       width: 90%;
+      
+   }
+   
+}
+
+
+@media screen and (max-width:800px) {
+
 
    .contacts .conteneur2 .reseau{
       width: 100%;
