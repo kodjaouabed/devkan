@@ -13,6 +13,9 @@ body{
   background-position-y: 50%;
   
 }
+.no-scroll {
+  overflow: hidden;
+}
 .info{
   width: 90%;
   margin-left: 100px;

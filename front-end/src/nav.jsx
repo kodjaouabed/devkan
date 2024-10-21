@@ -14,8 +14,10 @@ export default function Nav(props) {
     function menu() {
         if (menudisplay===-400) {
           setdisplay(0)
+          document.body.classList.toggle('no-scroll')
         } else {
           setdisplay(-400)
+          document.body.classList.toggle('no-scroll')
         }
     }
 

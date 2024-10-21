@@ -23,6 +23,7 @@ export default function   Portofolio({reference}) {
    .catch(err=>console.log(err))
   },[])
     function projectdetailsopen(e) {
+      document.body.classList.toggle('no-scroll')
         document.querySelector(".detailsProject").style.marginRight="0px"
         projectdetailsid=e.target.getAttribute("numberproject")
         axios.post("https://devkan.vercel.app/projectdetails",{projectdetailsid})
