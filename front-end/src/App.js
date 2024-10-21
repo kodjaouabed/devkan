@@ -315,8 +315,8 @@ useEffect(() => {
         <Experiences/>
         <Service reference={sectionService} ref={refservice} />
         <Technologies reference={sectionCompetences} ref={refcompetences}/>
-        {/*<Portofolio reference={sectionportofolio} ref={refportofolio} />
-        <Tarifs reference={sectiontarifs} /> */}
+        <Portofolio reference={sectionportofolio} ref={refportofolio} />
+        {/*<Tarifs reference={sectiontarifs} /> */}
         
         <Apropos reference={sectionapropos} ref={refapropos} />
         <Contact reference={sectioncontact} ref={refcontact} />
