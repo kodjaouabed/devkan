@@ -4,6 +4,8 @@ import { faHome,faUser,faBook, faBriefcase, faCommentSms, faCommentDollar, faCom
 import { Typewriter } from 'react-simple-typewriter';
 import { red,green,blue,opacity } from './colors'
 import ContactUs from './contactUs';
+import { motion } from 'framer-motion';
+
 
 
 
@@ -81,13 +83,7 @@ function App() {
       }
     });
   }
-  const optionsbtn = {
-    root: null, // viewport par défaut
-    rootMargin: '0px',
-    threshold: 0.1 // déclenchement à 10% de visibilité
-  };
-
-  const observerbtn= new IntersectionObserver(callbackobserver,optionsbtn)
+  
  
     
    
@@ -255,29 +251,13 @@ function Scrollbtn() {
     </div>
   )
 }
-const ratio=0.1
-const options={
-  root:null,
-  rootMargin:"0px",
-  threshold: 0.1,
-}
-function visible(entries,observer) {
- entries.forEach(entry => {
-  if (entry.intersectionRatio>ratio) {
-    entry.target.classList.add("visible")
-    observer.unobserve(entry.target)
-  }
- });
-}
+
 useEffect(() => {
 
   setTimeout(() => {
     setchargement(true)
   }, 5000);
- const observer=new IntersectionObserver(visible,options)
- document.querySelectorAll('[class*="invisible"]').forEach(r=>{
-  observer.observe(r)
- })
+ 
  
 
   
@@ -295,8 +275,18 @@ useEffect(() => {
         <div className='background'>
         <div className='info'>
           <div>
-            <p className='moi invisible1' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Abed nego kodjaou , Propulseur numériques</p>
-            <p className='typewriter invisible2' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
+            <motion.p
+             initial={{ opacity: 0, y: 100 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.5 }}
+             className='moi' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
+              Abed nego kodjaou , Propulseur numériques
+             </motion.p>
+            <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className='typewriter' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
                <Typewriter
                 words={['REACT DEVELOPPEUR','DEVELOPPEUR INFORMATIQUE', "DEVELOPPEUR FULLSTACK" ,"DEVELOPPEUR D'APPLICATION WEB","DEVELOPPEUR D'APPLICATION MOBILE"]}
                 loop={100}
@@ -306,11 +296,15 @@ useEffect(() => {
                 deleteSpeed={50}
                 delaySpeed={18500}
               />
-            </p>
-            <div className='conteneur_button'>
-              <button className="downloadcv invisible3" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}><a href="devkan.png" download="devkan.png" style={{textDecoration:"none",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Telecharger mon cv</a></button>
-              <button className="lienapropos invisible3" type="button" style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}} onClick={aproposscroll}>A propos de moi</button>
-            </div>
+            </motion.p>
+            <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className='conteneur_button'>
+              <button className="downloadcv" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}><a href="devkan.png" download="devkan.png" style={{textDecoration:"none",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Telecharger mon cv</a></button>
+              <button className="lienapropos" type="button" style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}} onClick={aproposscroll}>A propos de moi</button>
+            </motion.div>
           
           </div>
           

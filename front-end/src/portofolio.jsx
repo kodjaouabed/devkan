@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXmark,faCalendar, faEarListen, faLink, faGlobe, faEye, faHeart, faGear} from '@fortawesome/free-solid-svg-icons'
 import axios from "axios"
 import { red,green,blue,opacity } from './colors'
+import { motion } from 'framer-motion'
 
 
 export default function   Portofolio({reference}) {
@@ -86,34 +87,18 @@ export default function   Portofolio({reference}) {
   
   
 function Project(props) {
-      const ratio=0.1
-    const options={
-      root:null,
-      rootMargin:"0px",
-      threshold: 0.1,
-    }
-    function visible(entries,observer) {
-     entries.forEach(entry => {
-      if (entry.intersectionRatio>ratio) {
-        entry.target.classList.add("visible")
-        observer.unobserve(entry.target)
-      }
-     });
-    }
-    useEffect(() => {
-     const observer=new IntersectionObserver(visible,options)
-     document.querySelectorAll('[class*="invisible"]').forEach(r=>{
-      observer.observe(r)
-     })
       
-    },[]);
      if (typeproject==="all") {
       return(
         <div className='projet'>
             {projects.map((project,indexprojects)=>{
             return(
              
-              <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
+              <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
@@ -121,7 +106,7 @@ function Project(props) {
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faLink}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
                  </div>
                 </div>
-              </div>
+              </motion.div>
             
             
                )
@@ -144,7 +129,11 @@ function Project(props) {
           {projects.map((project,indexprojects)=>{
             if (project.typeproject==="DEVELOPPEMENT WEB") {
                return(
-                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
+                <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
@@ -152,7 +141,7 @@ function Project(props) {
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faLink}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
                  </div>
                 </div>
-              </div>
+              </motion.div>
             
                )
             }
@@ -166,7 +155,11 @@ function Project(props) {
             {projects.map((project,indexprojects)=>{
             if (project.typeproject==="DEVELOPPEMENT MOBILE") {
                return(
-                <div  id={'project'+project.id} className='invisible' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
+                <motion.div
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{marginTop:250}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
@@ -174,7 +167,7 @@ function Project(props) {
                   <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faLink}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
                  </div>
                 </div>
-              </div>
+              </motion.div>
                )
             }
             })}
@@ -182,38 +175,34 @@ function Project(props) {
       )
      }
     }
-    const ratio=0.1
-    const options={
-      root:null,
-      rootMargin:"0px",
-      threshold: 0.1,
-    }
-    function visible(entries,observer) {
-     entries.forEach(entry => {
-      if (entry.intersectionRatio>ratio) {
-        entry.target.classList.add("visible")
-        observer.unobserve(entry.target)
-      }
-     });
-    }
-    useEffect(() => {
-     const observer=new IntersectionObserver(visible,options)
-     document.querySelectorAll('[class*="invisible"]').forEach(r=>{
-      observer.observe(r)
-     })
-      
-    },[]);
+    
       return(
         <div className='portofolio' ref={reference}>
           <div className='btn-container'>
               <div style={{width:200}}>
 
               <div className='section'>
-              <h2 style={{textAlign:"left",marginLeft:38}}>Projets</h2>
+              <motion.h2
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              style={{textAlign:"left",marginLeft:38}}>Portofolio</motion.h2>
                 <div>
-                  <hr  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
-                  <hr  style={{width:150,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
-                  <hr  style={{width:200,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/> 
+                  <motion.hr
+                   initial={{ opacity: 0, y: 150 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
+                  <motion.hr
+                   initial={{ opacity: 0, y: 160 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:150,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
+                  <motion.hr 
+                   initial={{ opacity: 0, y: 170 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:200,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/> 
                 </div>
               </div>
                 
@@ -221,10 +210,22 @@ function Project(props) {
               </div>
               
     </div> 
-          <div className='btn-projet invisible4'>
-            <span className='active all'  onClick={effetall} style={active}>TOUS LES PROJETS</span>
-            <span className='web'  onClick={effetweb}>DEVELOPPEMENT WEB</span>
-            <span className='mob'  onClick={effetmob}>DEVELOPPEMENT MOBILE</span>
+          <div className='btn-projet'>
+            <motion.span
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className='active all'  onClick={effetall} style={active}>TOUS LES PROJETS</motion.span>
+            <motion.span
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className='web'  onClick={effetweb}>DEVELOPPEMENT WEB</motion.span>
+            <motion.span
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className='mob'  onClick={effetmob}>DEVELOPPEMENT MOBILE</motion.span>
           </div>
         {
         <div className='detailsProject' style={{backgroundColor:"white"}}>

@@ -4,6 +4,7 @@ import { colors } from './colors'
 import axios from "axios"
 import { red,green,blue,opacity } from './colors'
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,27 +22,7 @@ export default function Contact({reference}) {
   
 
 
-  const ratio=0.1
-const options={
-  root:null,
-  rootMargin:"0px",
-  threshold: 0.1,
-}
-function visible(entries,observer) {
- entries.forEach(entry => {
-  if (entry.intersectionRatio>ratio) {
-    entry.target.classList.add("visible")
-    observer.unobserve(entry.target)
-  }
- });
-}
-useEffect(() => {
- const observer=new IntersectionObserver(visible,options)
- document.querySelectorAll('[class*="invisible"]').forEach(r=>{
-  observer.observe(r)
- })
   
-},[]);
 
     const [nom_prenom,setnomPrenom]=useState(null)
     const [email,setEmail]=useState(null)
@@ -100,16 +81,36 @@ useEffect(() => {
     
     return(
       <div className='contacts' ref={reference}>
-        <div className='section'>
-<h2 style={{textAlign:"left",marginLeft:38}}>Contatez-moi</h2>
-  <div>
-    <hr  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
-    <hr  style={{width:150,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
-    <hr  style={{width:200,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/> 
-  </div>
-</div>
+           <div className='section'>
+              <motion.h2
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              style={{textAlign:"left",marginLeft:38}}>Contact</motion.h2>
+                <div>
+                  <motion.hr
+                   initial={{ opacity: 0, y: 150 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:100,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
+                  <motion.hr
+                   initial={{ opacity: 0, y: 160 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:150,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/>
+                  <motion.hr 
+                   initial={{ opacity: 0, y: 170 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5 }}
+                  style={{width:200,height:5,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,marginLeft:40}}/> 
+                </div>
+              </div>
        <div className='conteneur1'>
-        <div className='contact invisible1'>
+        <motion.div
+        initial={{ opacity: 0, y: 160 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className='contact'>
           <div>
             <p><FontAwesomeIcon icon={faLocationDot} style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,fontSize:"20px",marginRight:"15px"}}  />ADRESSE</p>
             <p>Ville de CALAVI , Arconville</p>
@@ -131,9 +132,13 @@ useEffect(() => {
           </div>
           <hr style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>
           
-        </div>
+        </motion.div>
         
-          <div className='formulaire_de_contact invisible3'>
+          <motion.div
+          initial={{ opacity: 0, y: 160 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className='formulaire_de_contact'>
             <form ref={form}>
           <div><span style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}><FontAwesomeIcon icon={faUser} style={{color:"white",fontSize:"20px",marginTop:"10px"}}  /></span><input   type="text" name="nom" onChange={nom} id="" placeholder='Nom / Prénom'/></div>
           <div><span style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}><FontAwesomeIcon icon={faMailBulk} style={{color:"white",fontSize:"20px",marginTop:"10px"}}  /></span><input  type="email" name="email" onChange={nom} id="" placeholder='E-mail'/></div>
@@ -143,7 +148,7 @@ useEffect(() => {
           <div><span style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}><FontAwesomeIcon icon={faLock} style={{color:"white",fontSize:"20px",marginTop:"10px"}}  /></span><input  type="number" name="verification" onChange={nom} id="" placeholder='5+4=?'/></div>
           <button onClick={affichag} style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`, border:`solid 1px ${`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}`}}>Envoyer</button>
         </form>
-        </div>
+        </motion.div>
         
         
        </div>
@@ -152,13 +157,21 @@ useEffect(() => {
        <div className='conteneur2' style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
         <div className='reseau'>
   
-           <div className='invisible1 c1'>
+           <motion.div
+           initial={{ opacity: 0, y: 160 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.5 }}
+           className='c1'>
             <h3>DEVELOPPEUR INFORMATIQUE INDEPENDANT</h3>
             <p><span>Developpeur web fullstack & d'application mobile (android & ios)</span>, je suis à votre disposition pour répondre à tout type de projets de <span>création de site internet de developpement spécifique ,d'application web , d'apllication mobile.</span> </p>
             <p><span>Pasionné par les technologies de developpement web et d'application , je mets mes compétences au service de vos besoins dans vos divers domaines .</span></p>
-           </div>
+           </motion.div>
   
-           <div className='invisible2 c2'>
+           <motion.div 
+           initial={{ opacity: 0, y: 160 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.5 }}
+           className='c2'>
             <h3>ABED NEGO KODJAOU</h3>
             <p><FontAwesomeIcon icon={faLocationDot} style={{color:"white",fontSize:"20px",marginRight:"15px"}}  />45 , allée des grives 83390 cuers</p>
             <p><a href="tel:+22968364255"><FontAwesomeIcon icon={faPhone} style={{color:"white",fontSize:"20px",marginRight:"15px"}}  />+229 68364255</a></p>
@@ -166,7 +179,7 @@ useEffect(() => {
             <p><a href="https://www.facebook.com/abednego.kodjaou?locale=fr_FR"><FontAwesomeIcon icon={faFacebook} style={{color:"white",fontSize:"20px",marginRight:"15px"}}  />Devkan</a></p>
             <p><a href="https://wa.me/+22968364255"><FontAwesomeIcon icon={faWhatsapp} style={{color:"white",fontSize:"20px",marginRight:"15px"}}  />Devkan</a></p>
             <p><a href="/"><FontAwesomeIcon icon={faLink} style={{color:"white",fontSize:"20px",marginRight:"15px"}}  />Devkan.com</a></p>
-            </div>
+            </motion.div>
   
         </div>
         </div>

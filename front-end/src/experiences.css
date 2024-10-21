@@ -15,20 +15,7 @@
 .experiences div p{
    margin-top: -10px; 
 }
-.visible {
-   opacity: 1;
-   transform: translateY(0);
-   transition: 1s cubic-bezier(0.5,0,0,1);
- }
- .invisible1 {
-   transition-delay: 1s;
- }
- .invisible2 {
-   transition-delay: 1.6s;
- }
- .invisible3 {
-   transition-delay: 2.2s;
- }
+
 
 @media screen and (max-width:1000px) {
 

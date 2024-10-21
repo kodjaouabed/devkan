@@ -6,6 +6,7 @@ import {faHome,faBars,faXmark,faPhone,faEnvelope} from '@fortawesome/free-solid-
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { red,green,blue,opacity } from './colors'
+import {motion} from "framer-motion"
 
 
 export default function Nav(props) {
@@ -18,37 +19,27 @@ export default function Nav(props) {
         }
     }
 
-    const ratio=0.1
-  const options={
-    root:null,
-    rootMargin:"0px",
-    threshold: 0.1,
-  }
-  function visible(entries,observer) {
-   entries.forEach(entry => {
-    if (entry.intersectionRatio>ratio) {
-      entry.target.classList.add("visible")
-      observer.unobserve(entry.target)
-    }
-   });
-  }
- useEffect(() => {
-   const observer=new IntersectionObserver(visible,options)
-   document.querySelectorAll('[class*="invisible"]').forEach(r=>{
-    observer.observe(r)
-   })
     
- },[]);
+
     return (
       <section>
-      <nav className='navbars invisible1'>
-          <div className='logo'>
-              <img src="devkan.png" alt="" />
+      <nav className='navbars'>
+          <div
+           className='logo'>
+              <motion.img 
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              src="devkan.png" alt="" />
           </div>
           
-          <div className='nav invisible2'>
-           <a href="https://wa.me/+22968364255" className='invisible6' ><FontAwesomeIcon icon={faWhatsapp} style={{ fontSize:20,marginRight:5}}/><span>+22968364255</span></a>
-           <a href="mailto:abnegko@gmail.com"  className='invisible7'><FontAwesomeIcon icon={faEnvelope} style={{ fontSize:15,marginRight:14}}/><span>abnegko@gmail.com</span></a>
+          <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className='nav'>
+           <a href="https://wa.me/+22968364255"><FontAwesomeIcon icon={faWhatsapp} style={{ fontSize:20,marginRight:5}}/><span>+22968364255</span></a>
+           <a href="mailto:abnegko@gmail.com"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize:15,marginRight:14}}/><span>abnegko@gmail.com</span></a>
          
              {/* <a href="/" onClick={props.clickhome} className='lienhome'><FontAwesomeIcon icon={faHome} style={{ fontSize:15,paddingLeft:15,paddingRight:15,cursor:"pointer"}} className='home'/></a>
               <a href="/" onClick={props.clickservice} className='lienservices'>Services</a>
@@ -57,11 +48,11 @@ export default function Nav(props) {
               <a href="/" onClick={props.clicktarifs} className='lientarifs'>Tarifs</a>
               <a href="/" onClick={props.clickapropos} className='lienapropos'>A propos</a>
               <a href="/" onClick={props.clickcontact} className='liencontact'>Contact</a>*/}
-          </div>
+          </motion.div>
            
-          <FontAwesomeIcon onClick={menu} icon={faBars} className='btn-menu invisible9' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>
+          <FontAwesomeIcon onClick={menu} icon={faBars} className='btn-menu' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(0)},${green(0)},${blue(0)},${opacity(1)})`}}/>
       </nav>
-      <div className='menu' style={{marginRight:`${menudisplay}px`}}>
+      <div className='menu' style={{marginRight:`${menudisplay}px`,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,zIndex:10}}>
               <div style={{textAlign:'left'}}><FontAwesomeIcon  onClick={menu} icon={faXmark}  style={{ fontSize:30,marginLeft:16,cursor:"pointer",color:"white"}}/></div>
               <div className='navigation'>
                 <h5>A PROPOS</h5>
