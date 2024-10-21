@@ -101,11 +101,11 @@ function Project(props) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
-                <div style={{marginTop:250}}>
+                <div style={{marginTop:150}}>
                   <div style={{width:"100%",background:"transparent",display:"flex",justifyContent:"center",gap:20}}>
-                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
-                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faHeart}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
-                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faLink}  style={{ fontSize:20,cursor:"pointer",opacity:0.4,color:"white",transition:"1s"}} />
+                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faEye}  style={{ fontSize:20,cursor:"pointer",color:"white",opacity:0.4,transition:"1s"}} />
+                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faHeart}  style={{ fontSize:20,cursor:"pointer",color:"white",opacity:0.4,transition:"1s"}} />
+                  <FontAwesomeIcon  onClick={(e) => {e.stopPropagation()}} icon={faLink}  style={{ fontSize:20,cursor:"pointer",color:"white",opacity:0.4,transition:"1s"}} />
                  </div>
                 </div>
               </motion.div>
