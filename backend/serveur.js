@@ -45,16 +45,6 @@ app.get("/projects",(req,res)=>{
     })
 })
 
-app.get("/experiences",(req,res)=>{
- const sql="SELECT * FROM experience"
- db.query(sql,[],(err,data)=>{
-    if (err) {
-        res.json(err)
-    } else {
-        res.json(data)
-    }
- })
-})
 
 
 
