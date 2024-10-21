@@ -52,7 +52,7 @@ export default function Nav(props) {
               <a href="/" onClick={props.clickcontact} className='liencontact'>Contact</a>*/}
           </motion.div>
            
-          <FontAwesomeIcon onClick={menu} icon={faBars} className='btn-menu' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(0)},${green(0)},${blue(0)},${opacity(1)})`}}/>
+          <FontAwesomeIcon onClick={menu} icon={faBars} className='btn-menu' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>
       </nav>
       <div className='menu' style={{marginRight:`${menudisplay}px`,backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,zIndex:10}}>
               <div style={{textAlign:'left'}}><FontAwesomeIcon  onClick={menu} icon={faXmark}  style={{ fontSize:30,marginLeft:16,cursor:"pointer",color:"white"}}/></div>
