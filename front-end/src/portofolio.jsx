@@ -31,6 +31,7 @@ export default function   Portofolio({reference}) {
          .catch(err=>console.log(err))
       }
       function projectdetailsclose() {
+        document.body.classList.toggle('no-scroll')
           document.querySelector(".detailsProject").style.marginRight="-1000px"
       }
     function effetall() {
