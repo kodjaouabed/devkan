@@ -256,7 +256,7 @@ useEffect(() => {
 
   setTimeout(() => {
     setchargement(true)
-  }, 5000);
+  }, 2000);
  
  
 

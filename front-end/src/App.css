@@ -8,9 +8,9 @@ body{
 .background{
   width: 100%;
   min-height: 70vh;
-  background: url(background2.png) no-repeat right;
+  background: url(background21.png) no-repeat right;
   background-position-x: 90%;
-  background-position-y: 50%;
+  background-position-y: 90%;
   
 }
 .no-scroll {
