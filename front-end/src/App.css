@@ -134,7 +134,7 @@ body{
   }
   .info div p{
     font-size: 20px;
-    padding-top: 00px;
+    
   }
   .info  .conteneur_button{
     padding-left: 120px;
@@ -154,12 +154,12 @@ body{
   .background{
     width: 100%;
     min-height: 70vh;
-    background: url(background2.png) center/contain no-repeat;
+    background: url(background2.png) center/cover no-repeat;
     background-position-x: 50%;
-    background-position-y: 0%;
-    
+    background-position-y: 200%;
+    margin-top: -10px;
   }
-  
+ 
   .info div p{
     font-weight: 900;
   }
