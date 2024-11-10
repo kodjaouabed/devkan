@@ -120,16 +120,15 @@ body{
 @media screen and (max-width:1000px) {
   .background{
     width: 100%;
-    min-height: 170vh;
+    min-height: 70vh;
     background: url(background2.png) no-repeat right;
-    
-    background-position-x: 90%;
-    background-position-y: -350%;
+    background-position-x: 50%;
+    background-position-y: 0%;
     
   }
   .info{
     width: 100%;
-    padding-top: 750px;
+    padding-top: 500px;
     margin-left: 0;
     text-align: center;
   }
@@ -154,10 +153,11 @@ body{
 @media screen and (max-width:600px) {
   .background{
     width: 100%;
-    min-height: 100vh;
+    min-height: 70vh;
     background: url(background2.png) center/contain no-repeat;
     background-position-x: 50%;
-    background-position-y: -100%;
+    background-position-y: 0%;
+    
   }
   
   .info div p{
@@ -198,7 +198,7 @@ body{
    }
 }
 
-/*@media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
   .info  .conteneur_button{
     padding-left: 20px;
    }
@@ -212,4 +212,4 @@ body{
     margin-left: -20px;
    }
 
-}*/
+}
