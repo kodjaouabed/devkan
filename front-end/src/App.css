@@ -150,18 +150,48 @@ body{
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
   .background{
     width: 100%;
-    min-height: 70vh;
-    background: url(background2.png) center/cover no-repeat;
+    min-height: 170vh;
+    background: url(background2.png) center/contain no-repeat;
     background-position-x: 50%;
-    background-position-y: 200%;
-    margin-top: -10px;
+    background-position-y: -150%;
+    
   }
  
   .info div p{
     font-weight: 900;
+    margin-top: 400px;
+  }
+  .moi{
+    display: none;
+  } 
+  
+   .info div p{
+     font-size: 20px;
+     padding-top: 20px;
+   }
+   .info  .conteneur_button{
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+   }
+}
+
+@media screen and (max-width:644px) {
+  .background{
+    width: 100%;
+    min-height: 170vh;
+    background: url(background2.png) center/contain no-repeat;
+    background-position-x: 50%;
+    background-position-y: -100%;
+    
+  }
+ 
+  .info div p{
+    font-weight: 900;
+    margin-top: 300px;
   }
   .moi{
     display: none;
@@ -180,10 +210,43 @@ body{
 
 
 
+@media screen and (max-width:580px) {
+  .background{
+    width: 100%;
+    min-height: 170vh;
+    background: url(background2.png) center/contain no-repeat;
+    background-position-x: 50%;
+    background-position-y: -100%;
+    
+  }
+ 
+  .info div p{
+    font-weight: 900;
+    margin-top: 200px;
+  }
+  .moi{
+    display: none;
+  } 
+  
+   .info div p{
+     font-size: 20px;
+     padding-top: 20px;
+   }
+   .info  .conteneur_button{
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+   }
+}
+
+
+
+
 @media screen and (max-width:500px) {
   
   .background{
-    background-position-y: 20%;
+    background-position-y: 0%;
+    
     
   }
    
