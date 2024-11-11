@@ -222,14 +222,9 @@ body{
 
 
 @media screen and (max-width:580px) {
-  /*.background{
-    width: 100%;
-    min-height: 170vh;
-    background: url(background2.png) center/contain no-repeat;
-    background-position-x: 50%;
-    background-position-y: -100%;
-    
-  }*/
+  .backgroundresponsive{
+    margin-top: -250px;
+  }
  
   .info div p{
     font-weight: 900;
@@ -253,12 +248,13 @@ body{
 
 
 @media screen and (max-width:500px) {
-  
-  /*.background{
-    background-position-y: 50%;
-    
-    
-  }*/
+  .backgroundresponsive{
+    margin-top: -300px;
+  }
+  .info div p{
+    font-weight: 900;
+    margin-top: -600px;
+  }
    
 }
 @media screen and (max-width:400px) {
