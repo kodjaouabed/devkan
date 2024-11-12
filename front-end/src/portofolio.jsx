@@ -18,18 +18,20 @@ export default function   Portofolio({reference}) {
 
   
   useEffect(()=>{
-   axios.get("https://devkan.vercel.app/projects")
+   axios.get("http://localhost:3001/projects")
    .then(result=>setproject(result.data))
    .catch(err=>console.log(err))
   },[])
     function projectdetailsopen(e) {
       document.body.classList.toggle('no-scroll')
         document.querySelector(".detailsProject").style.marginRight="0px"
-        projectdetailsid=e.target.getAttribute("numberproject")
-        axios.post("https://devkan.vercel.app/projectdetails",{projectdetailsid})
+        projectdetailsid=e.currentTarget.getAttribute("numberproject")
+        axios.post("http://localhost:3001/projectdetails",{projectdetailsid})
         .then(result=>setprojectdetails(result.data[0])) 
          .catch(err=>console.log(err))
-      }
+    }
+      
+
       function projectdetailsclose() {
         document.body.classList.toggle('no-scroll')
           document.querySelector(".detailsProject").style.marginRight="-1000px"
@@ -100,8 +102,9 @@ function Project(props) {
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
-                <div style={{ position: "relative", height: "100%" }}>
+              numberproject={project.id}
+              id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject}   style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
+                <div style={{ position: "relative", height: "100%" }} >
                  <div style={{ position: "absolute", bottom: 30, width: "100%", background: "transparent", display: "flex", justifyContent: "center", gap: 20 }}>
                     <FontAwesomeIcon onClick={(e) => { e.stopPropagation() }} icon={faEye} style={{ fontSize: 20, cursor: "pointer", color: "white", opacity: 0.4, transition: "1s" }} />
                     <FontAwesomeIcon onClick={(e) => { e.stopPropagation() }} icon={faHeart} style={{ fontSize: 20, cursor: "pointer", color: "white", opacity: 0.4, transition: "1s" }} />

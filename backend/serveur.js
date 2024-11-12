@@ -19,6 +19,13 @@ const db=mysql.createConnection({
     database:'bsakvrkpkojt8vtgkl6f',
 })
 
+/*const db=mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'Devkan'
+})*/
+
 
 
 
