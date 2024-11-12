@@ -18,7 +18,7 @@ export default function   Portofolio({reference}) {
 
   
   useEffect(()=>{
-   axios.get("http://localhost:3001/projects")
+   axios.get("https://devkan.vercel.app/projects")
    .then(result=>setproject(result.data))
    .catch(err=>console.log(err))
   },[])
@@ -26,7 +26,7 @@ export default function   Portofolio({reference}) {
       document.body.classList.toggle('no-scroll')
         document.querySelector(".detailsProject").style.marginRight="0px"
         projectdetailsid=e.currentTarget.getAttribute("numberproject")
-        axios.post("http://localhost:3001/projectdetails",{projectdetailsid})
+        axios.post("https://devkan.vercel.app/projectdetails",{projectdetailsid})
         .then(result=>setprojectdetails(result.data[0])) 
          .catch(err=>console.log(err))
     }
