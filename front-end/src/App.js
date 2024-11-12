@@ -272,48 +272,11 @@ useEffect(() => {
         {/* <Header refhome={sectionhome} />*/}
         
         <Nav clickhome={home}  clickservice={service} clickcompetences={competences} clickportofolio={portofolio} clicktarifs={tarifs} clickapropos={apropos} clickcontact={contact}  clicksavoir={apropos} navacceuil={home} navservice={service} navcompetence={competences} navportofolio={portofolio} navtarifs={tarifs} navapropos={apropos} navcontact={contact} />
-        <div className='background'>
-        <div className='info'>
-          <div>
-            <motion.p
-             initial={{ opacity: 0, y: 100 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.5 }}
-             className='moi' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
-              Abed nego kodjaou , Propulseur numériques
-             </motion.p>
-            <motion.p
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className='typewriter' style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>
-               <Typewriter
-                words={['REACT DEVELOPPEUR','DEVELOPPEUR INFORMATIQUE', "DEVELOPPEUR FULLSTACK" ,"DEVELOPPEUR D'APPLICATION WEB","DEVELOPPEUR D'APPLICATION MOBILE"]}
-                loop={100}
-                cursor
-                cursorStyle='|'
-                typeSpeed={50}
-                deleteSpeed={50}
-                delaySpeed={18500}
-              />
-            </motion.p>
-            <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className='conteneur_button'>
-              <button className="downloadcv" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}><a href="devkan.png" download="devkan.png" style={{textDecoration:"none",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Telecharger mon cv</a></button>
-              <button className="lienapropos" type="button" style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}} onClick={aproposscroll}>A propos de moi</button>
-            </motion.div>
-          
-          </div>
-          
-  
-         </div>
-         
-        </div>
-        <div className='backgroundresponsive'></div>
+        
+        <div className='background' style={{display:"flex",justifyContent:"space-around",alignItems:"center"}}>
         <div className='inforesponsive'>
+        <div className='backgroundresponsive'></div>
+        </div>
         <div className='info'>
           <div>
             <motion.p

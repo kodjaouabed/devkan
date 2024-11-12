@@ -34,18 +34,14 @@
 }
 
 
-@media screen and (max-width:720px) {
-   .experiences{
-      margin-top: -250px;
-  }
-}
+
 
 @media screen and (max-width:500px) {
   
 .experiences{
     width: 100%;
     flex-wrap: wrap;
-    margin-top: -450px;
+    
 }
 
 .experiences div{
