@@ -306,7 +306,7 @@ useEffect(() => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className='conteneur_button'>
-              <button className="downloadcv" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}><a href="cv.pdf" download="cv.pdf" style={{textDecoration:"none",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Telecharger mon cv</a></button>
+              <button className="downloadcv" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}><a href="/cv.pdf" download="cv.pdf" style={{textDecoration:"none",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>Telecharger mon cv</a></button>
               <button className="lienapropos" type="button" style={{backgroundColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}} onClick={aproposscroll}>A propos de moi</button>
             </motion.div>
           
