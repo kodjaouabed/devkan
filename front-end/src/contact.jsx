@@ -56,7 +56,9 @@ export default function Contact({reference}) {
        if (nom_prenom!==null && email!==null && telephone!==null &&  message!==null && verification!==null  && condition!==null) {
         if (condition===true) {
           if (verification==="9") {
-            emailjs
+            const confirm=window.confirm("Voulez-vous continuer l'envoie d'Email")
+            if (confirm) {
+              emailjs
            .sendForm('service_hgueuty', 'template_lk2cslh', form.current, {
            publicKey: 'YPTrEdIFmeTfZ3JQW',
          })
@@ -68,6 +70,10 @@ export default function Contact({reference}) {
           alert("Email non  envoyé")
         },
       );
+            } else {
+              return(0)
+            }
+            
           }else{
             alert("Désolé")
           }
