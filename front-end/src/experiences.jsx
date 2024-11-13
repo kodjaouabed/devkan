@@ -108,7 +108,7 @@ export default function Experiences() {
           transition={{ duration: 0.5 }}
           style={{ color: `rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})` }}
         >
-          <h2><FontAwesomeIcon  icon={faLock} className='btn-menu' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/> </h2>
+          <h2><FontAwesomeIcon  icon={faLock} className='btn-menu' style={{cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/> </h2>
           <p>Projets freelance réalisés</p>
         </motion.div>
         <motion.div
