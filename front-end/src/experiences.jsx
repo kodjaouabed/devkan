@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { red, green, blue, opacity } from './colors';
 import './experiences.css';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 export default function Experiences() {
   const [projets, setProjets] = useState(0);
@@ -106,7 +108,7 @@ export default function Experiences() {
           transition={{ duration: 0.5 }}
           style={{ color: `rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})` }}
         >
-          <h2> {projets}+</h2>
+          <h2><FontAwesomeIcon  icon={faLock} className='btn-menu' style={{marginLeft:35,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/> </h2>
           <p>Projets freelance réalisés</p>
         </motion.div>
         <motion.div
