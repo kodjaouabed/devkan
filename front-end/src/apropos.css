@@ -76,7 +76,7 @@
 
 @media screen and (max-width:500px) {
     .apropos{
-        height: 50vh;
+        height: 100vh;
     }
     .proposbackground{
         width:100%;
