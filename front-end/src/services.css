@@ -18,7 +18,8 @@
 }
 .service-contenu1 div{
     width: 350px;
-    height: 300px;
+    min-height: 300px;
+   
 }
 .section{
 margin-left: 18px;
@@ -50,7 +51,6 @@ margin-left: 18px;
 @media screen and (max-width:1000px) {
     .service-contenu1 div{
         width: 400px;
-        height: 300px;
     }
    
 }
