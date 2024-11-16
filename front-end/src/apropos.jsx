@@ -41,8 +41,8 @@ export default function Apropos({reference}) {
 </div>
 <div className='propos' style={{marginTop:100,flexWrap:"wrap"}}>
  <motion.div
-  initial={{ opacity: 0, y: 200 }}
-  whileInView={{ opacity: 1, y: 0 }}
+  initial={{ opacity: 0, x: -200 }}
+  whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.5 }}
  className='proposbackground' style={{borderRadius:10,backgroundPositionY:0}}></motion.div>
   <motion.div
