@@ -78,4 +78,9 @@
     .apropos{
         min-height: 220vh;
     }
+    .proposbackground{
+        width:100%;
+        height: 450px;
+        background:url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) center/contain no-repeat;
+    }
 }
