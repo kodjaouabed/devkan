@@ -185,3 +185,18 @@
       font-size: 17px;
    }
 }
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+.contacts .conteneur1{
+   margin-bottom: 30px;
+   
+ }
+}
+
+
+
