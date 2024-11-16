@@ -301,6 +301,9 @@ useEffect(() => {
                 delaySpeed={18500}
               />
             </motion.p>
+            <audio controls >
+              <source src="boy_spyce_dreams_performance_video_mp3_61038.mp3" type="audio/mpeg"/>
+            </audio>
             <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
