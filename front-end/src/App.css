@@ -203,6 +203,17 @@ body{
    .moi{
     display: none;
    }
+
+   .info div p{
+    font-size: 20px;
+    padding-top: 0px;
+  }
+  .info  .conteneur_button{
+   display: flex;
+   gap: 30px;
+   margin-top: 100px;
+ 
+  }
 }
 
 
