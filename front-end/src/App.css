@@ -200,6 +200,9 @@ body{
   .info  .conteneur_button button{
     font-size: 15px;
    }
+   .moi{
+    display: none;
+   }
 }
 
 
