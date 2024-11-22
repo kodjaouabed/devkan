@@ -239,8 +239,8 @@ function Project(props) {
           </div>
           <hr />
           <div className='imagesdetailsProject'>
-            <img src={"projectimages/"+projectdetails.imageproject} alt="" />
-            <img src={"projectimages/"+projectdetails.imagemobile} alt="" />
+            <img className='desktop'  src={"projectimages/"+projectdetails.imageproject} alt="" />
+            <img className='mobile'  src={"projectimages/"+projectdetails.imagemobile} alt="" />
           </div>
           <div className='technologiesdetailsProject'  style={{marginTop:20}}>
            <div style={{height:100}}>

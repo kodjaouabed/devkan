@@ -93,9 +93,14 @@ div[id*="project"] {
     color: white;
 }
 
-.detailsProject .imagesdetailsProject img{
+.detailsProject .imagesdetailsProject .desktop{
     width: 45%;
     height: 200px;
+    box-shadow: 5px 5px 1px black;
+}
+.detailsProject .imagesdetailsProject .mobile{
+    width: 20%;
+    height: 150px;
     box-shadow: 5px 5px 1px black;
 }
 .detailsProject .technologiesdetailsProject div{
