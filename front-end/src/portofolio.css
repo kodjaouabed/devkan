@@ -100,7 +100,7 @@ div[id*="project"] {
 }
 .detailsProject .imagesdetailsProject .mobile{
     width: 20%;
-    height: 150px;
+    height: 300px;
     box-shadow: 5px 5px 1px black;
 }
 .detailsProject .technologiesdetailsProject div{
