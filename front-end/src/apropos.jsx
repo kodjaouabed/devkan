@@ -53,7 +53,7 @@ export default function Apropos({reference}) {
     <p style={{textAlign:'left'}}>
     Je m'appelle Abed-Négo Kodjaou, un développeur web et mobile passionné, spécialisé en React JS et React Native. Avec plusieurs années d'expérience dans la création d'applications modernes, intuitives et performantes, j'aide les entreprises à transformer leurs idées en solutions numériques efficaces.
     </p>
-    <p style={{textAlign:'right'}}>
+    <p style={{textAlign:'left'}}>
     Ma passion pour le développement est née durant mes études, où j'ai eu l'opportunité de travailler sur divers projets, aussi bien web que mobiles. Lors de ma soutenance, j'ai présenté un projet de gestion scolaire, ce qui a renforcé mon expertise dans la gestion de projets complexes et à grande échelle.
     </p>
     <p style={{textAlign:'left'}}>
