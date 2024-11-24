@@ -63,7 +63,9 @@ div[id*="project"] {
     margin-top:-20px;
     padding-top: 10px;
 }
-
+.mobilee{
+    width: 10%;
+}
 .detailsProject{
     width: 60%;
     height: 83vh;
@@ -145,6 +147,7 @@ div[id*="project"] {
     .detailsProject{
         width: 100%;
     }
+    
 }
 @media  screen and (max-width:800px) {
     .detailsProject .imagesdetailsProject img{
