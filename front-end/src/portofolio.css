@@ -147,7 +147,9 @@ div[id*="project"] {
     .detailsProject{
         width: 100%;
     }
-    
+    .mobilee{
+        width: 20%;
+    }
 }
 @media  screen and (max-width:800px) {
     .detailsProject .imagesdetailsProject img{
