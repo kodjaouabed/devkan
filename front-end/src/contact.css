@@ -179,9 +179,11 @@
 
    .contacts .conteneur2 .reseau div h3{
       font-size: 20px;
+      text-align: left;
    }
    .contacts .conteneur2 .reseau div p{
       font-size: 17px;
+      text-align: left;
    }
 }
 
