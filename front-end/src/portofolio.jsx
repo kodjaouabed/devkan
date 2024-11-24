@@ -115,13 +115,12 @@ function Project(props) {
                 )
               } else {
                  return(
-                  <div className='mobilee'>
-                    <motion.div
+                  <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               numberproject={project.id}
-              id={'project'+project.id}  key={indexprojects}  onClick={props.clickproject}   style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/contain no-repeat`,borderRadius:5,cursor:"pointer",width:"100%"}} >
+              id={'project'+project.id} className='mobilee' key={indexprojects}  onClick={props.clickproject}   style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/contain no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{ position: "relative", height: "100%" }} >
                  <div style={{ position: "absolute", bottom: 30, width: "100%", background: "transparent", display: "flex", justifyContent: "center", gap: 20 }}>
                     <FontAwesomeIcon onClick={(e) => { e.stopPropagation() }} icon={faEye} style={{ fontSize: 20, cursor: "pointer", color: "white", opacity: 0.4, transition: "1s" }} />
@@ -130,7 +129,6 @@ function Project(props) {
                   </div>
                  </div>
               </motion.div>
-                  </div>
                  )
               }
             
@@ -183,7 +181,7 @@ function Project(props) {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/cover no-repeat`,borderRadius:5,cursor:"pointer"}} >
+                id={'project'+project.id} className='' key={indexprojects}  onClick={props.clickproject} numberproject={project.id}  style={{background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./projectimages/${project.imageproject}') center/contain no-repeat`,borderRadius:5,cursor:"pointer"}} >
                 <div style={{ position: "relative", height: "100%" }}>
                  <div style={{ position: "absolute", bottom: 30, width: "100%", background: "transparent", display: "flex", justifyContent: "center", gap: 20 }}>
                     <FontAwesomeIcon onClick={(e) => { e.stopPropagation() }} icon={faEye} style={{ fontSize: 20, cursor: "pointer", color: "white", opacity: 0.4, transition: "1s" }} />
