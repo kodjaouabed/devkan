@@ -264,17 +264,17 @@ function Project(props) {
           </div>
           <div className='technologiesdetailsProject'  style={{marginTop:20}}>
            <div style={{height:100}}>
-             <h3>{projectdetails.typeproject}</h3>
-             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Conception graphique & webdisign ({projectdetails.design})</p>
-             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Front-end {projectdetails.frontend}</p>
-             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Backend {projectdetails.backend}</p>
-             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Dynamise et animation par {projectdetails.dynamisme}</p>
+             <h3 style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>{projectdetails.typeproject}</h3>
+             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Conception graphique & webdisign ({projectdetails.design})</p>
+             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Front-end {projectdetails.frontend}</p>
+             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Backend {projectdetails.backend}</p>
+             <p><FontAwesomeIcon icon={faGear}   style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Dynamise et animation par {projectdetails.dynamisme}</p>
            </div>
            <div style={{height:100}}>
-             <h3>INFOT PROJET</h3>
-             <p><FontAwesomeIcon  icon={faCalendar}  style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Année : {projectdetails.annéeproject}</p>
-             <p><FontAwesomeIcon  icon={faEarListen}  style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>Catégorie : {projectdetails.typeproject}</p>
-             <p><FontAwesomeIcon  icon={faLink}  style={{ fontSize:15,marginRight:10,cursor:"pointer"}}/>lien : <a href="http://Devkan.com">{projectdetails.lienproject}</a></p>
+             <h3 style={{color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}>INFOT PROJET</h3>
+             <p><FontAwesomeIcon  icon={faCalendar}  style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Année : {projectdetails.annéeproject}</p>
+             <p><FontAwesomeIcon  icon={faEarListen}  style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>Catégorie : {projectdetails.typeproject}</p>
+             <p><FontAwesomeIcon  icon={faLink}  style={{ fontSize:15,marginRight:10,cursor:"pointer",color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`}}/>lien : <a href={projectdetails.lienproject}>{projectdetails.lienproject}</a></p>
              <hr />
              <p className='techs'>
              {
