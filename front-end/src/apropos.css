@@ -18,74 +18,46 @@
 }
 
 .proposbackground{
-    width: 38%;
+    width: 70%;
     height: 450px;
-    background:url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) center/contain no-repeat;
+    background:url(abed.png) center/contain no-repeat;
 }
 .propostexte{
-    width: 50%;
-    height: 450px;
+    width: 30%;
+    height: 100px;
+    text-align: center;
 }
+.propostexte .aproposplus{
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  }
 
 
 
-@media screen and (max-width:1000px) {
-    .proposbackground{
-        width: 38%;
-        height: 450px;
-        background:url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) center/cover no-repeat;
-    }
-    .apropos .propos .passion{
-        width: 80%;
-    }
-    .apropos .propos .experience{
-        width: 80%;
-    }
-    .apropos .nbrprojet{
-        flex-wrap: wrap;
-    }
-    .apropos .nbrprojet div{
-        width: 50%;
-    }
-    .bt{
-        font-size: 10px;
-    }
 
 
+
+
+
+
+@media screen and (max-width:600px) {
     .propostexte{
-        width: 90%;
-    }
-    .proposbackground{
-       width: 100%;
-    }
-    .apropos{
-        min-height: 120vh;
-    }
-}
-
-
-
-
-
-@media screen and (max-width:650px) {
-    .apropos{
-        min-height: 180vh;
+        margin-top: -50px;
     }
 }
 
 
 @media screen and (max-width:500px) {
-    .apropos{
-        height: 180vh;
-    }
     .proposbackground{
-        width:100%;
+        width: 100%;
         height: 450px;
-        background:url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) center/contain no-repeat;
+        background:url(abed.png) center/cover no-repeat;
     }
-
     .propostexte{
-        margin-top: -150px;
+        width: 100%;
+        margin-top: 0px;
     }
-    
 }

@@ -2,6 +2,9 @@ import React,{useEffect} from 'react'
 import "./apropos.css"
 import { colors } from './colors'
 import  apropos from "./pngtree-frustrated-girl-point-with-finger-at-something-young-person-show-vector-png-image_49030176-removebg-preview.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfo } from '@fortawesome/free-solid-svg-icons'
+//import {faHome,faBars,faXmark,faPhone,faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { red,green,blue,opacity } from './colors'
 import { motion } from 'framer-motion'
 
@@ -50,7 +53,8 @@ export default function Apropos({reference}) {
    whileInView={{ opacity: 1, y: 0 }}
    transition={{ duration: 0.5 }}
   className='propostexte'>
-    <p style={{textAlign:'left'}}>
+    {/*
+       <p style={{textAlign:'left'}}>
     Je m'appelle Abed-Négo Kodjaou, un développeur web et mobile passionné, spécialisé en React JS et React Native. Avec plusieurs années d'expérience dans la création d'applications modernes, intuitives et performantes, j'aide les entreprises à transformer leurs idées en solutions numériques efficaces.
     </p>
     <p style={{textAlign:'left'}}>
@@ -61,6 +65,9 @@ export default function Apropos({reference}) {
 
 Si vous recherchez un développeur passionné, rigoureux, et capable de donner vie à vos projets web ou mobiles, n'hésitez pas à me contacter. Je suis toujours ouvert à de nouvelles collaborations et défis techniques.
     </p>
+    */}
+    <button className="aproposplus" type="button" style={{borderWidth:1,borderColor:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,color:`rgba(${red(175)},${green(34)},${blue(34)},${opacity(1)})`,borderStyle:"solid"}}>Voir plus</button>
+              
     </motion.div>
 </div>
       

@@ -5,11 +5,14 @@ body{
   font-family:'poppins', sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  
 }
+
+
 .background{
   width: 100%;
   min-height: 70vh;
-  background: url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) no-repeat center/contain;
+  background:url(freelancer-3d-illustration-of-a-laptop-wielding-freelance-developer_9844724.jpg_w700wp-removebg-preview.png) no-repeat center/contain;
   background-position-x: 100%;
   background-position-y: 0%;
   
